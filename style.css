@@ -99,16 +99,22 @@ background-color: #2D25A0;
     padding-left: 15px;
     font-size: 16px;
     margin-top: 10px;
+    width: 300px;
+    height: 154px;
 }
 .playerName{
     font-size: 28px;
     margin-top: 15px;
     margin-bottom: 0px;
+    width: 300px;
+    height: 40px;
 
 }
 .playerBio{
     color: #6C6C6C;
     margin-bottom: 0px;
+    width: 300px;
+    height: 104px;
 }
 
 
@@ -118,6 +124,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .logo img{
@@ -142,11 +149,75 @@ footer{
 }
 .copyright{
     font-size: 18px;
+    width: 300px;
+    height: 31px;
+    align-items: center;
 }
 
 
+/* Media queries */
 
+@media only screen and (max-width:688px){
+    
+   .players,.firstSec{
+       display: grid;
+       grid-template-columns: repeat(1,1fr);
+       grid-column-gap: 24px;
+       
+      
+ 
+   }
+   .firstSec{
+       margin-bottom: 10px;
+   }
 
+   .heading{
+       font-size: 30px;
+       margin-top: 0;
+       margin-bottom: 0;
+       padding-bottom: 0;
+       width: 100px;
+       
+       
+    }
+    .topWritings{
+        width: 278px;
+        height: 138px;
 
+    }
+    
+    .button{
+        margin-left: 0;
+        width: 168px;
+        height: 44px;
+    }
+    .firstSec img{
+        width: 300px;
+        height: 250px;
+        align-items: center;
+        margin-left: 80px;
+    
+        
+    }
+    .player{
+        width: 330px;
+        height: 474px;
 
-  
+    }
+    .playerDetail{
+        width: 300px;
+        height: 154px;
+
+    }
+    
+   .logo img{ margin-top: 20px;
+    width: 150px;
+    height: 63px;}   
+.copyright{
+    width:236px;
+    height: 32px;
+    align-items: center;
+    line-height: 24px;
+}
+    
+}
